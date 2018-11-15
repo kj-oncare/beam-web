@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+
+    <title>beam GmbH</title>
+    <link rel="shortcut icon" type="image/png" href="../img/favicon.png"/>
+
+    <meta name="description" content="beam GmbH">
+    <meta name="keywords" content="">
+    <meta name="author" content="beam GmbH">
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://localhost:4000" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
+
+    <!-- for Carousel -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+
+    <link rel="stylesheet" href="/css/main.css">
+
+</head>
+
+
+  <div id="nav">
+    <div class="Grid Grid--spaceBetween container80">
+        <div id="nav-left" class="Grid Grid--middle">
+            <div id="nav-logo" class="img-scale logo-beam" onclick="scrollDownTo('#home-video')"></div>
+        </div>
+        <!-- mainNavbar for ScreenM & ScreenL & ScreenXL -->
+        <div id="nav-right" class="Grid Grid--middle">
+            
+            <Button id="menu-home-intro" class="nav-item" onclick="scrollDownTo('#home-intro')">
+                <h6>what's beam?</h6>
+            </Button>
+            
+            <Button id="menu-home-app" class="nav-item" onclick="scrollDownTo('#home-app')">
+                <h6>anytime. anywhere.</h6>
+            </Button>
+            
+            <Button id="cta-jobs-before" class="cta-border-yellow" onclick="scrollDownTo('#home-jobs')">
+                <h6>join us</h6>
+            </Button>
+            <Button id="cta-jobs-after" class="cta-fill-blue" onclick="scrollDownTo('#home-jobs')" style="display: none;">
+                <h6>join us</h6>
+            </Button>
+        </div>
+    </div>
+</div>
+  
+  <body>
+
+    <div id="landing-page" class="container80 Grid-column Grid-column--center Grid-column--middle">
+  <div class="video-container">
+    <video id="home-video" autoplay muted loop poster="/img/background-video-beam.png">
+      <source src="/img/background-video-beam.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="slogan">
+    <h1>Here is the Slogan</h1>
+    <br/>
+    <h2>Here is the Sub-slogan, write something more...</h2>
+    <Button class="cta-fill-blue" onclick="scrollDownTo('#home-intro')">
+      <h6>call to action</h6>
+    </Button>
+  </div>
+  <div id="countdown" class="Grid Grid--cols-4 Grid--center">
+    <div class="countdown">
+      <div id="countdown-day" class="countdown-number"></div>
+      <div class="countdown-text">days</div>
+    </div>
+    <div class="countdown">
+      <div id="countdown-hour" class="countdown-number"></div>
+      <div class="countdown-text">hours</div>
+    </div>
+    <div class="countdown">
+      <div id="countdown-minute" class="countdown-number"></div>
+      <div class="countdown-text">minutes</div>
+    </div>
+    <div class="countdown countdown-yellow">
+      <div id="countdown-second" class="countdown-number"></div>
+      <div class="countdown-text">seconds</div>
+    </div>
+  </div>
+</div>
+
+<section id="home-intro" class="Grid Grid--cols-2 Grid--middle container60">
+  <div class="Grid-cell section-text">
+    <h1 class="section-title"><mark>WHAT'S BEAM?</mark></h1>
+    <br/><br/>
+    <h4>
+      <b>beam</b> is a last-mile electric vehicle sharing company dedicated to bringing safe, low-cost and environmentally friendly transportation solutions to communities across the world. 
+      <br/><br/>
+      We aim to work closely with cities to help make transportation better and more environmentally friendly. 
+      To achieve this goal, <b>beam</b> plans to provide a fleet of electric, shared scooters to communities all over the world. 
+      <br/><br/>
+      We are headquartered in Munich, Germany and will soon be coming to your city.
+    </h4>
+  </div>
+  <div class="Grid-cell Grid Grid--center">
+    <img src="/img/pic-intro.svg" style="max-width: 100%;" />
+  </div>
+</section>
+
+<section id="home-app">
+  <div class="background50"></div>
+  <div class="Grid Grid--cols-2 Grid--middle container60">
+    <div class="Grid-cell Grid Grid--center">
+      <img src="/img/pic-app.svg" style="max-width: 100%;" />
+    </div>
+    <div class="Grid-cell section-text">
+      <h1>Anytime. Anywhere.</h1>
+      <br/><br/>
+      <h4>
+        one to two rows to explain how it works.
+        <br/>here is the second ros...
+      </h4>
+    </div>
+  </div>
+</section>
+
+<section id="home-jobs" class="container80">
+  <h1>WE'RE HIRING!</h1>
+  <div class="Grid Grid--center Grid--middle">
+    
+      
+        <div class="card Grid-column Grid-column--spaceBetween" onclick="objectShow('#head-rd')">
+          <h6>Full-time</h6>
+          <div>
+            <h2><b>Head of Developer (m/w)</b></h2>
+            <br/>
+            <h6>Munich, Germany</h6>
+          </div>
+        </div>
+      
+    
+  </div>
+</section>
+
+
+    
+        <div class="modal" id="head-rd">
+            <div class="modal-background" onclick="objectHide('#head-rd');"></div>
+            <div class="modal-container slide-in-from-bottom">
+                <div class="img-contain icon-close" onclick="objectHide('#head-rd');"></div>
+                <!-- Template for jobs -->
+                <div class="jobs-container">
+                    <h1>Head of Developer (m/w)</h1>
+                    <br/>
+                    
+                    
+                        
+                        
+                            <h3>Ihre Aufgaben:</h3>
+                            <ul>
+                                
+                                
+                                    <li><p>list-1</p></li>
+                                
+                                    <li><p>list-2</p></li>
+                                
+                                    <li><p>list-3</p></li>
+                                
+                            </ul>
+                            <br/>         
+                        
+                            <h3>Ihre Voraussetzungen:</h3>
+                            <ul>
+                                
+                                
+                                    <li><p>list-1</p></li>
+                                
+                                    <li><p>list-2</p></li>
+                                
+                                    <li><p>list-3</p></li>
+                                
+                            </ul>
+                            <br/>         
+                        
+                            <h3>Was wir Ihnen bieten:</h3>
+                            <ul>
+                                
+                                
+                                    <li><p>list-1</p></li>
+                                
+                                    <li><p>list-2</p></li>
+                                
+                                    <li><p>list-3</p></li>
+                                
+                            </ul>
+                            <br/>         
+                        
+                    
+                    
+                        <br/>
+                        <p>Freuen Sie sich auf eine spannende Tätigkeit mit viel Gestaltungsfreiheit und gezielter Förderung für Ihren persönlichen Erfolg!</p>
+                        <br/>
+                    
+                    
+                        <br/>
+                        <h3>Sind Sie interessiert?</h3>
+                        <p>Dann senden Sie gerne Ihre aussagekräftigen Bewerbungsunterlagen mit Gehaltswunsch und frühestmöglichem Eintrittstermin bevorzugt per Mail an <a href='mailto:jobs@oncare.me'>jobs@beam.town</p>
+                    
+                </div>
+                
+                    <a href="mailto: jobs@beam.town" class="Grid Grid--center">
+                        <Button class="cta-fill-blue">
+                            <h6>call to action</h6>
+                        </Button>
+                    </a>
+                    <br/>
+                    <br/>
+                
+            </div>
+        </div>
+    
+
+
+    
+
+
+  </body>
+  
+  <footer class="Grid Grid--center">
+    <h6><a onclick="objectShow('#imprint');">Imprint</a></h6>
+    <h6><a onclick="objectShow('#privacy');">Privacy</a></h6>
+    <h6>&copy; 2018 BEAM GmbH - all rights reserved</h6>
+</footer>
+<br/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- for Carousel -->
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/countdown.js"></script>
+<script type="text/javascript" src="/js/scroll-down.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+<script type="text/javascript" src="/js/modal.js"></script>
+
+
+</html>
